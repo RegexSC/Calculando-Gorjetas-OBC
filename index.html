@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>CALCULAR GORJETAS</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="titulo">
+      <h1>Calculadora de Gorjetas</h1>
+    </div>
+    <form class="total" id="pedido">
+      <label for="valorPed">
+        <p class="texto">Qual o valor do pedido?</p>
+      </label>
+      <p class="texto">
+        R$<input type="number" name="valorPed" id="valorPed" placeholder=" 100.00" required>
+      </p>
+      <label for="avaliacao">
+        <p class="texto">Avalie nosso atendimento.</p>
+      </label>
+      <p class="texto">
+        <select name="avaliacao" id="avaliacao">
+          <option disable>- Escolha uma opção -</option>
+          <option value="0.30">Incrivel</option>
+          <option value="0.20">Bom</option>
+          <option value="0.15">Aceitável</option>
+          <option value="0.10">Fraco</option> class="texto"
+          <option value="0.05">Ruim</option>
+        </select>
+      </p>
+      <label for="divisor">
+        <p class="texto">Quantas pessoas vão dividir a conta?</p>
+      </label>
+      <p class="texto">
+        <input type="number" name="divisor" class="texto" id="divisor" placeholder="0">
+      </p>
+      <div class="botoes">
+        <button type="submit">Calcular</button>
+        <button type="reset">Limpar</button>
+      </div>
+    </form>
+    <div id="total">
+      <span id="valor"></span>
+      <span id="each">para cada pessoa</span>
+    </div>
+  </div>
+  <script type="text/javascript" src="scripts.js"></script>
+</body>
+
+</html>

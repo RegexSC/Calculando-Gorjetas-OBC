@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=lato:100,300,500,700,900|pt++mono);
+:root {
+  --CorTextos: #0d4941;
+  --bgColor: #54ac4e5e;
+  --bgColor2: #00ffe542;
+  --sombra: #358d7aa6 0.01rem 0.01rem 0.02rem 0.1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+}
+
+body {
+  color: var(--CorTextos);
+  background-color: var(--bgColor);
+}
+.container {
+  width: 35%;
+  height: 50%;
+  margin: 8rem auto; /*coloca a margin definida em todos os lados e centraliza*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  background-color: var(--bgColor2);
+  box-shadow: var(--sombra);
+  border-radius: 3rem;
+}
+.titulo {
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 3rem 3rem 0 0;
+}
+
+form {
+  font-size: 12pt;
+  font-weight: 400;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3rem 3rem 3rem 3rem;
+  background-color: var(--bgColor);
+  box-shadow: #3481707a 0.01rem 0.01rem 0.02rem 0.1rem;
+}
+input {
+  width: 10rem;
+}
+input,
+select {
+  text-align: center;
+  padding: 0.2rem 0;
+  margin: 0 0.3rem;
+  background-color: none;
+  border-style: hidden;
+  border-radius: 0.3rem;
+  line-height: 1;
+}
+
+p {
+  display: flex;
+  margin: 0.2rem;
+  align-items: center;
+}
+#total span {
+  padding: 0.5rem 0;
+  font-weight: 600;
+  display: inline-block;
+  justify-content: center;
+}
+
+.texto {
+  padding: 0.2rem;
+  color: var(--CorTextos);
+}
+
+.botoes {
+  display: flex;
+}
+button {
+  font-size: 10pt;
+  width: 60%;
+  font-weight: 900;
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  margin: 0.2rem 0.4rem 0.3rem 0.4rem;
+  text-align: center;
+  background-color: var(--bgColor2);
+  border-radius: 0.3rem;
+}
