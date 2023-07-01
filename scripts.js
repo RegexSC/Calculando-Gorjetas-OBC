@@ -9,11 +9,12 @@ function calculatePedido(event) {
     return;
   }
 
-  if ((pessoas == "") | (pessoas == 1)) {
+  if ((pessoas == "") | (pessoas == 0)| (pessoas == 1)) {
     document.getElementById("total").style.display = "block";
     document.getElementById("each").style.display = "none";
-  } else {
+  } else if(pessoas > 1){
     document.getElementById("total").style.display = "block";
+    document.getElementById("each").style.display = "block";
   }
 
   let valorFinal = (pedido * nota) / pessoas;
