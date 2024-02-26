@@ -90,3 +90,9 @@ button {
   background-color: var(--bgColor2);
   border-radius: 0.3rem;
 }
+
+@media (max-width: 640px) {
+  .container {
+    width: 80%;
+  }
+}
